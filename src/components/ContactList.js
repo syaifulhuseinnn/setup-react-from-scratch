@@ -1,5 +1,6 @@
 import React from "react";
 import ContactItem from "./ContactItem";
+import PropTypes from "prop-types";
 
 export default function ContactList({ contacts }) {
   return (
@@ -14,3 +15,7 @@ export default function ContactList({ contacts }) {
     </div>
   );
 }
+
+ContactList.propTypes = {
+  contacts: PropTypes.array.isRequired,
+};

@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { PlusIcon } from "@primer/octicons-react";
+import PropTypes from "prop-types";
 
 export default function ButtonAddContact({ handleShowModal }) {
   return (
@@ -13,3 +14,7 @@ export default function ButtonAddContact({ handleShowModal }) {
     </Button>
   );
 }
+
+ButtonAddContact.propTypes = {
+  handleShowModal: PropTypes.func.isRequired,
+};
