@@ -65,7 +65,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="container-fluid p-0 bg-light">
+    <div className="container-fluid p-0">
       <Header />
       {contact.loading ? (
         <main>
